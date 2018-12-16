@@ -38,7 +38,7 @@ mvn clean install
 # Executar
 
 ```
-cd selecao-involves/localizacao-server
+cd selecao-involves/localizacao-server ou cd localizacao-server/
 ```
 ```
 mvn spring-boot:run
@@ -47,7 +47,7 @@ mvn spring-boot:run
 # Testar
 
 ```
-cd selecao-involves/
+cd selecao-involves/ ou cd ../
 ```
 ```
 mvn clean test
