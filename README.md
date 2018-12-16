@@ -55,7 +55,8 @@ mvn clean test
 
 # Arquitetura
 
-Backend em Java Spring-boot, com persistência em postgres (rodando no docker)
-Frontend em Angular 6, com integração com GoogleMaps
+Backend em Java Spring-boot, com persistência em postgres (rodando no docker).
+
+Frontend em Angular 6, com integração com GoogleMaps.
 
 
