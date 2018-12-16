@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@ng-select/ng-select/themes/default.theme.css";
+
+.img-circle {
+  border-radius: 50%;
+}
+
+body{
+  font-size: 14px;
+}
+
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.form-group.required .control-label:before, .required-fields:before {
+  content: "*";
+  color: #E94E50;
+  padding-right: 3px;
+}
+
+.maps {
+  height: 400px;
+}
+

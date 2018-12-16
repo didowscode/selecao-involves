@@ -1,0 +1,82 @@
+<section class="content">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="box box-primary">
+        <div class="box-body box-profile">
+          <img class="profile-user-img img-responsive img-circle" *ngIf="funcionario" [src]="'https://api.adorable.io/avatars/102/'+ funcionario.name + '.png'" alt="User profile picture">
+          <img class="profile-user-img img-responsive img-circle" *ngIf="!funcionario" src="../../assets/images/foto_model_funcionario.png" alt="User profile picture">
+          <h3 class="profile-username text-center">{{funcionario?.name}}</h3>
+          <p class="text-muted text-center">Representante</p>
+          <p class="text-muted text-center">{{funcionario?.endereco}}</p>
+          <ul class="list-group list-group-unbordered">
+            <li class="list-group-item">
+              <b>Latitude</b> <a class="pull-right">{{funcionario?.latitude}}</a>
+            </li>
+            <li class="list-group-item">
+              <b>Longitude</b> <a class="pull-right">{{funcionario?.longitude}}</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-9">
+      <div class="box box-primary">
+        <div class="box-header with-border">
+          <h3 class="box-title">Lojas atendidas</h3>
+        </div>
+        <div class="box-body">
+          <table class="table table-bordered" *ngIf="lojas && lojas.length > 0">
+            <tbody>
+            <tr>
+              <th style="width: 10px">#</th>
+              <th>Loja</th>
+              <th>Distância</th>
+            </tr>
+            <tr *ngFor="let loja of lojas; let pos = index">
+              <td>{{pos + 1}}.</td>
+              <td>{{loja.name}}</td>
+              <td>{{loja.distancia}} KM</td>
+            </tr>
+            </tbody>
+          </table>
+          <div *ngIf="!lojas || lojas.length === 0">
+            <div class="alert alert-warning alert-dismissible">
+              Não há lojas na área de cobertura desse representante
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box box-primary" *ngIf="funcionario">
+        <div class="box-header with-border">
+          <h3 class="box-title">Área de cobertura</h3>
+        </div>
+        <div class="box-body">
+          <agm-map
+            (mapReady)="mapReady()"
+            [latitude]="funcionario?.latitude"
+            [longitude]="funcionario?.longitude"
+            [zoom]="13"
+            [disableDefaultUI]="false"
+            [zoomControl]="false" class="maps">
+
+            <agm-marker
+              *ngFor="let loja of lojas; let pos = index"
+              [latitude]="loja.latitude"
+              [longitude]="loja.longitude"
+              [label]="loja.name"
+              [markerDraggable]="false">
+            </agm-marker>
+
+            <agm-circle [latitude]="funcionario?.latitude" [longitude]="funcionario?.longitude"
+                        [radius]="2000"
+                        [fillColor]="'red'"
+                        [circleDraggable]="true"
+                        [editable]="true">
+            </agm-circle>
+
+          </agm-map>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
