@@ -4,7 +4,7 @@ Aplicação para verificar quais lojas cada funcionário consegue atender em um 
 
 # Instalação
 
-> Para perfeito funcionamento da aplicação, os passos a seguir dever ser rodas na sequência que foram descritos.
+> Para perfeito funcionamento da aplicação, os passos a seguir devem ser rodados na sequência que foram descritos.
 
 ### 1 - Front-end
 
@@ -70,6 +70,8 @@ Frontend desenvolvido em Angular 6.
 > Gerador de Avatar (http://avatars.adorable.io/)
 
 > Interface visual utilizando AdmintLte
+
+> Feature de inclusão de novo representante
 
 # Considerações futuras
 
