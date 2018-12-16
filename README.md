@@ -2,6 +2,16 @@
 
 Aplicação para verificar quais lojas cada funcionário consegue atender em um raio de no máximo 2 km.
 
+# Pré requisitos
+
+> node
+
+> maven
+
+> docker
+
+> java
+
 # Instalação
 
 > Para perfeito funcionamento da aplicação, os passos a seguir devem ser rodados na sequência que foram descritos.
