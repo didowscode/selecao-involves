@@ -23,7 +23,7 @@ cd selecao-involves/docker ou cd ../../../../docker/
 ```
 
 ```
-docker-compose up
+docker-compose up -d
 ```
 ### 3 - Projeto
 
