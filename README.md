@@ -19,7 +19,7 @@ npm install
 ### 2 - Docker
 
 ```
-cd selecao-involves/docker
+cd selecao-involves/docker ou cd ../../../../docker/
 ```
 
 ```
@@ -28,7 +28,7 @@ docker-compose up
 ### 3 - Projeto
 
 ```
-cd selecao-involves/
+cd selecao-involves/ ou cd ../
 ```
 
 ```
