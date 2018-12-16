@@ -86,10 +86,17 @@ Frontend desenvolvido em Angular 6.
 
 > Feature de inclusão de novo representante
 
-# Considerações futuras
+# Implementações futuras
 
 1. Rodar toda a aplição com docker e não somente o banco
 2. Implementar teste no Frontend
 
+# Screenshots
+
+![alt text](https://github.com/didowscode/selecao-involves/blob/master/lista.png)
+
+![alt text](https://github.com/didowscode/selecao-involves/blob/master/visualizar.png)
+
+![alt text](https://github.com/didowscode/selecao-involves/blob/master/adicionar.png)
 
 
