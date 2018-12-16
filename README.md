@@ -2,9 +2,11 @@
 
 Aplicação para verificar quais lojas cada funcionário consegue atender em um raio de no máximo 2 km.
 
-# H1  Instalação
+# Instalação
 
-## 1 - Front-end
+> Para perfeito funcionamento da aplicação, os passos a seguir dever ser rodas na sequência que foram descritos.
+
+### 1 - Front-end
 
 ```
 cd selecao-involves/localizacao-web/src/main/web
@@ -14,7 +16,7 @@ cd selecao-involves/localizacao-web/src/main/web
 npm install
 ```
 
-## 2 - Docker
+### 2 - Docker
 
 ```
 cd selecao-involves/docker
@@ -23,7 +25,7 @@ cd selecao-involves/docker
 ```
 docker-compose up
 ```
-## 3 - Projeto
+### 3 - Projeto
 
 ```
 cd selecao-involves/
@@ -33,7 +35,7 @@ cd selecao-involves/
 mvn clean install
 ```
 
-# H1  Executar
+# Executar
 
 ```
 cd selecao-involves/localizacao-server
@@ -42,7 +44,7 @@ cd selecao-involves/localizacao-server
 mvn spring-boot:run
 ```
 
-# H1  Testar
+# Testar
 
 ```
 cd selecao-involves/
@@ -50,3 +52,10 @@ cd selecao-involves/
 ```
 mvn clean test
 ```
+
+# Arquitetura
+
+Backend em Java Spring-boot, com persistência em postgres (rodando no docker)
+Frontend em Angular 6, com integração com GoogleMaps
+
+
