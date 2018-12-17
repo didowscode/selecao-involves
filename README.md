@@ -90,6 +90,7 @@ Frontend desenvolvido em Angular 6.
 
 1. Rodar toda a aplição com docker e não somente o banco
 2. Implementar teste no Frontend
+3. Implementar I18n no Frontend
 
 # Screenshots
 
